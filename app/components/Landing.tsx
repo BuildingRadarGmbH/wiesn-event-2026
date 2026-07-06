@@ -170,13 +170,17 @@ export default function Landing({ lang }: { lang: Lang }) {
                   <time className="font-mono text-sm font-medium tabular-nums text-indigo">
                     {item.time}
                   </time>
-                  <div>
-                    <h3 className="font-display text-lg font-bold text-night">
-                      {item.title}
-                    </h3>
-                    <p className="mt-1.5 max-w-xl text-[0.95rem] leading-relaxed text-night/70">
-                      {item.body}
-                    </p>
+                  <div className="space-y-5">
+                    {item.blocks.map((block) => (
+                      <div key={block.title}>
+                        <h3 className="font-display text-lg font-bold text-night">
+                          {block.title}
+                        </h3>
+                        <p className="mt-1.5 max-w-xl text-[0.95rem] leading-relaxed text-night/70">
+                          {block.body}
+                        </p>
+                      </div>
+                    ))}
                   </div>
                 </li>
               ))}

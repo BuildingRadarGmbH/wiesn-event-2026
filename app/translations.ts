@@ -81,38 +81,52 @@ export const translations = {
       items: [
         {
           time: "09:00",
-          title: "Bayerisches Frühstück & Ankommen",
-          body: "Weißwurst, Brezn und Kaffee — ankommen und die anderen Gäste kennenlernen.",
+          blocks: [
+            {
+              title: "Bayerisches Frühstück & Ankommen",
+              body: "Weißwurst, Brezn und Kaffee — ankommen und die anderen Gäste kennenlernen.",
+            },
+          ],
         },
         {
-          time: "09:30",
-          title: "KI-Entwicklungen für die Baubranche",
-          body: "Die aktuellsten Entwicklungen, die wirklich für Bau und Vertrieb relevant sind.",
-        },
-        {
-          time: "10:30",
-          title: "Einblicke aus unserer Praxis",
-          body: "Was wir aus tausenden Vertriebsprozessen gelernt haben und wie sich das auf Ihre Pipeline übertragen lässt.",
-        },
-        {
-          time: "11:00",
-          title: "Building Radar & KI: die Roadmap",
-          body: "Wie sich unser Produkt entlang dieser KI-Entwicklungen weiterentwickelt – und was als Nächstes kommt.",
+          time: "ab 09:30",
+          blocks: [
+            {
+              title: "KI-Entwicklungen für die Baubranche",
+              body: "Die aktuellsten Entwicklungen, die wirklich für Bau und Vertrieb relevant sind.",
+            },
+            {
+              title: "Building Radar & KI: die Roadmap",
+              body: "Wie sich unser Produkt entlang dieser KI-Entwicklungen weiterentwickelt – und was als Nächstes kommt.",
+            },
+          ],
         },
         {
           time: "11:15",
-          title: "Auf geht's auf d'Wiesn",
-          body: "Gemeinsamer Aufbruch zum Oktoberfest.",
+          blocks: [
+            {
+              title: "Auf geht's auf d'Wiesn",
+              body: "Gemeinsamer Aufbruch zum Oktoberfest.",
+            },
+          ],
         },
         {
           time: "ab 11:30",
-          title: "Networking & Wiesn-Atmosphäre",
-          body: "Mittagessen, Maß und Zeit für Gespräche – die einzigartige Stimmung auf der Wiesn gemeinsam genießen.",
+          blocks: [
+            {
+              title: "Networking & Wiesn-Atmosphäre",
+              body: "Mittagessen, Maß und Zeit für Gespräche – die einzigartige Stimmung auf der Wiesn gemeinsam genießen.",
+            },
+          ],
         },
         {
           time: "17:30",
-          title: "Ausklang",
-          body: "Offizielles Ende. Wer mag, bleibt natürlich noch.",
+          blocks: [
+            {
+              title: "Ausklang",
+              body: "Offizielles Ende. Wer mag, bleibt natürlich noch.",
+            },
+          ],
         },
       ],
     },
@@ -203,38 +217,52 @@ export const translations = {
       items: [
         {
           time: "09:00",
-          title: "Bavarian breakfast & arrival",
-          body: "Weisswurst, pretzels and coffee — arrive and get to know the other guests.",
+          blocks: [
+            {
+              title: "Bavarian breakfast & arrival",
+              body: "Weisswurst, pretzels and coffee — arrive and get to know the other guests.",
+            },
+          ],
         },
         {
-          time: "09:30",
-          title: "AI developments for construction",
-          body: "The latest developments that are genuinely relevant for construction and sales.",
-        },
-        {
-          time: "10:30",
-          title: "Insights from our practice",
-          body: "What we've learned from thousands of sales processes and how it applies to your pipeline.",
-        },
-        {
-          time: "11:00",
-          title: "Building Radar & AI: the roadmap",
-          body: "How our product evolves along these AI developments – and what's coming next.",
+          time: "from 09:30",
+          blocks: [
+            {
+              title: "AI developments for construction",
+              body: "The latest developments that are genuinely relevant for construction and sales.",
+            },
+            {
+              title: "Building Radar & AI: the roadmap",
+              body: "How our product evolves along these AI developments – and what's coming next.",
+            },
+          ],
         },
         {
           time: "11:15",
-          title: "Off to the Wiesn",
-          body: "Heading to Oktoberfest together.",
+          blocks: [
+            {
+              title: "Off to the Wiesn",
+              body: "Heading to Oktoberfest together.",
+            },
+          ],
         },
         {
           time: "from 11:30",
-          title: "Networking & Oktoberfest atmosphere",
-          body: "Lunch, a Mass and time to talk – enjoying the unique Oktoberfest atmosphere together.",
+          blocks: [
+            {
+              title: "Networking & Oktoberfest atmosphere",
+              body: "Lunch, a Mass and time to talk – enjoying the unique Oktoberfest atmosphere together.",
+            },
+          ],
         },
         {
           time: "17:30",
-          title: "Wind-down",
-          body: "Official end. Anyone who likes is welcome to stay.",
+          blocks: [
+            {
+              title: "Wind-down",
+              body: "Official end. Anyone who likes is welcome to stay.",
+            },
+          ],
         },
       ],
     },
