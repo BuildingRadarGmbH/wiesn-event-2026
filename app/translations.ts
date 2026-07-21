@@ -47,6 +47,10 @@ export const translations = {
       successHeadline: "Pfiat di – bis zum 22. September!",
       successBody:
         "Wir haben Ihre Anmeldung erhalten und melden uns mit allen Details zum Ablauf. Bei Fragen schreiben Sie uns jederzeit.",
+      successLabelDecline: "Rückmeldung erhalten",
+      successHeadlineDecline: "Schade, dass es diesmal nicht klappt!",
+      successBodyDecline:
+        "Danke für Ihre Rückmeldung. Vielleicht beim nächsten Mal – wir würden uns freuen.",
       successAgain: "Weitere Person anmelden",
     },
     pillars: {
@@ -183,6 +187,10 @@ export const translations = {
       successHeadline: "See you on September 22!",
       successBody:
         "We've received your registration and will get back to you with all the details. If you have any questions, just reach out.",
+      successLabelDecline: "Response received",
+      successHeadlineDecline: "Sorry you can't make it!",
+      successBodyDecline:
+        "Thanks for letting us know. Maybe next time – we'd love to see you there.",
       successAgain: "Register another person",
     },
     pillars: {

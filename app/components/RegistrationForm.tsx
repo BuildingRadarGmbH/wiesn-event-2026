@@ -30,6 +30,7 @@ type Status = "idle" | "submitting" | "success" | "error";
 export default function RegistrationForm({ t }: { t: Dict["form"] }) {
   const [status, setStatus] = useState<Status>("idle");
   const [valid, setValid] = useState(false);
+  const [declined, setDeclined] = useState(false);
 
   const attendOptions = [
     { value: ATTEND_YES_VALUE, label: t.attendYes },
@@ -41,13 +42,15 @@ export default function RegistrationForm({ t }: { t: Dict["form"] }) {
     const data = new FormData(e.currentTarget);
     const val = (name: string) => String(data.get(name) ?? "").trim();
 
+    const answer = val("zusage_absage");
     const fields = [
       { name: "firstname", value: val("firstname") },
       { name: "lastname", value: val("lastname") },
       { name: "email", value: val("email") },
-      { name: "zusage_absage", value: val("zusage_absage") },
+      { name: "zusage_absage", value: answer },
     ];
 
+    setDeclined(answer === ATTEND_NO_VALUE);
     setStatus("submitting");
     try {
       const res = await fetch(ENDPOINT, {
@@ -90,11 +93,15 @@ export default function RegistrationForm({ t }: { t: Dict["form"] }) {
   if (status === "success") {
     return (
       <div className="flex flex-col items-start gap-4 rounded-2xl border border-border bg-gray-light p-8">
-        <div className="label text-indigo">{t.successLabel}</div>
+        <div className="label text-indigo">
+          {declined ? t.successLabelDecline : t.successLabel}
+        </div>
         <h3 className="font-display text-2xl font-bold text-night">
-          {t.successHeadline}
+          {declined ? t.successHeadlineDecline : t.successHeadline}
         </h3>
-        <p className="text-night/70">{t.successBody}</p>
+        <p className="text-night/70">
+          {declined ? t.successBodyDecline : t.successBody}
+        </p>
         <button
           type="button"
           onClick={() => {
